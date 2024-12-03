@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "Tool_Sphere"
+version = "0.1.0"
+description = ""
+authors = ["Adam Minge <minge.adam@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+pyside6 = "^6.6"
+pyside6-utils = "^1.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
