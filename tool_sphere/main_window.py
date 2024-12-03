@@ -1,7 +1,4 @@
-from PySide6.QtWidgets import (
-    QMainWindow,
-    QSizePolicy
-)
+from PySide6.QtWidgets import QMainWindow, QSizePolicy
 
 
 class MainWindow(QMainWindow):
