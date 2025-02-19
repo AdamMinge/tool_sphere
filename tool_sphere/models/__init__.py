@@ -1,3 +1,3 @@
-from tool_sphere.models.sidebar import SidebarModel
+from tool_sphere.models.tools import ToolsModel
 
-__all__ = ["SidebarModel"]
+__all__ = ["ToolsModel"]

@@ -1,3 +1,3 @@
-from tool_sphere.delegates.sidebar import SidebarDelegate
+from tool_sphere.delegates.tools import ToolsSidebarDelegate
 
-__all__ = ["SidebarDelegate"]
+__all__ = ["ToolsSidebarDelegate"]

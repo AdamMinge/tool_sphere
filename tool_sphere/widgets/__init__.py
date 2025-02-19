@@ -1,3 +1,3 @@
-from tool_sphere.widgets.sidebar import Sidebar
+from tool_sphere.widgets.tools import ToolsSidebar
 
-__all__ = ["Sidebar"]
+__all__ = ["ToolsSidebar"]

@@ -2,13 +2,13 @@ from PySide6.QtCore import Qt, QSize
 from PySide6.QtWidgets import QStyledItemDelegate, QStyle
 
 
-class SidebarDelegate(QStyledItemDelegate):
+class ToolsSidebarDelegate(QStyledItemDelegate):
     def __init__(self, is_expanded_callback, parent=None):
         super().__init__(parent)
-        self.is_expanded_callback = is_expanded_callback
+        self.__is_expanded_callback = is_expanded_callback
 
     def paint(self, painter, option, index):
-        is_expanded = self.is_expanded_callback()
+        is_expanded = self.__is_expanded_callback()
         icon = index.data(Qt.DecorationRole)
         text = index.data(Qt.DisplayRole)
 
@@ -23,4 +23,4 @@ class SidebarDelegate(QStyledItemDelegate):
             painter.drawText(text_rect, Qt.AlignVCenter | Qt.AlignLeft, text)
 
     def sizeHint(self, option, index):
-        return QSize(200 if self.is_expanded_callback() else 60, 40)
+        return QSize(200 if self.__is_expanded_callback() else 60, 40)
